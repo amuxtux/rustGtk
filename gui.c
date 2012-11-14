@@ -16,7 +16,15 @@ static void send( GtkWidget *widget,
     g_print (" sending mail to be done \n");
 }
 
-
+void giveMeACall(void (*callback)() ){
+  g_print (" calling callback from c \n");
+  
+  if(callback){
+    (*callback)();
+  }else{
+    g_print ("amit has skrewed up something callback null \n");
+  }
+}
 
 void showGtkUI(int argc, char* argv[])
 {
