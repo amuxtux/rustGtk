@@ -22,7 +22,7 @@ void giveMeACall(void (*callback)() ){
   if(callback){
     (*callback)();
   }else{
-    g_print ("amit has skrewed up something callback null \n");
+    g_print ("amit you have sckrewed up something... your callback is null .. fix it ... \n");
   }
 }
 
